@@ -1,7 +1,7 @@
 # Who Am I
 
 - **Name:** Sam Kujovich
-- **Role:** Engineering Leader at Arcade.dev
+- **Role:** Engineering Manager at Arcade.dev (Tools & Growth teams)
 - **Location:** Camas, WA
 - **LinkedIn:** [in/samkujovich](https://linkedin.com/in/samkujovich)
 - **GitHub:** [samkujovich](https://github.com/samkujovich)
@@ -10,7 +10,7 @@
 
 Engineering leader with 5+ years progressing from Manager to Director. Combines deep technical hands-on experience with organizational leadership.
 
-- **Arcade.dev** — Current role
+- **Arcade.dev** — First Engineering Manager. Leading Tools and Growth teams, building the platform that connects AI agents to real-world systems with proper auth, permissions, and security.
 - **A Place for Mom** — Director of Software Engineering. Led 12 engineers across AI Product and B2B Platform teams. Spearheaded Grace, a multi-agent system for an AI-native senior care marketplace. Transformed platform org metrics: KTLO 45%→19%, incident frequency 1/week→1/year, delivery lead time 20+→6 days.
 - **Realtor.com** — Built notifications infrastructure handling 4B+ quarterly messages. Led Auth0 migration of 170M records.
 - **Pandora** — Founding engineer on distributed message bus using Kafka.
