@@ -1,25 +1,28 @@
-# Global Claude Code Configuration
+# CLAUDE.md
 
-This is Sam Kujovich's global Claude Code configuration. These files provide default preferences and context across all projects. Project-specific instructions live in each repo's own `CLAUDE.md`.
+This is Sam Kujovich's global Claude Code configuration. It applies to all projects and repositories. Project-specific instructions live in each project's own `CLAUDE.md`.
 
 ## Always Loaded
 
-@PREFERENCES.md
+These files are included in every conversation:
 
-## Reference Files (load on demand)
+- @PREFERENCES.md — Output formatting preferences (lists over prose, concise responses, terminal colors)
 
-- `WHOAMI.md` — Who I am, my background, and what I'm working on
-- `CODING_STYLE.md` — Engineering philosophy and preferred patterns
+## Reference Files
 
-## Commands
+Read these when relevant to the task at hand:
 
-- `bun lint` — Lint markdown files
-- `bun format` — Auto-fix markdown lint issues
+- `WHOAMI.md` — Background on Sam: contact, career history, projects, and areas of expertise
+- `CODING_STYLE.md` — Coding conventions and engineering philosophy
+
+## Global Settings
+
+- `settings.local.json` — Claude Code permission allow-list (granular Bash command permissions for git operations, etc.)
 
 ## Setup
 
-To install, run:
+To install on a new machine (clones the repo and merges with any existing `~/.claude` data):
 
-```sh
-curl -s https://raw.githubusercontent.com/samkujovich/dot-claude/main/setup.sh | bash
+```bash
+curl -fsSL https://raw.githubusercontent.com/samkujovich/dot-claude/main/setup.sh | bash
 ```

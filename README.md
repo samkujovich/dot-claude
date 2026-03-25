@@ -1,35 +1,33 @@
 # dot-claude
 
-Dotfiles for [Claude Code](https://claude.ai/claude-code) — my global configuration for `~/.claude`.
+This is Sam Kujovich's global Claude Code configuration. It applies to all projects and repositories. Project-specific instructions live in each project's own `CLAUDE.md`.
 
-## What is this?
+## Always Loaded
 
-This repo is version-controlled global configuration for Claude Code. It lives at `~/.claude` and provides personal preferences, coding style, and workflow automations to every Claude Code session. Project-specific instructions live in each project's own `CLAUDE.md`.
+These files are included in every conversation:
 
-## Structure
+- `@PREFERENCES.md` — Output formatting preferences (lists over prose, concise responses, terminal colors)
 
-| File | Purpose |
-|------|---------|
-| `CLAUDE.md` | Main entry point — declares always-loaded vs on-demand files |
-| `PREFERENCES.md` | Output formatting and response style preferences |
-| `WHOAMI.md` | Professional identity and background |
-| `CODING_STYLE.md` | Engineering philosophy and preferred patterns |
-| `settings.json` | Global Claude Code settings |
-| `setup.sh` | One-line installer |
+## Reference Files
 
-## Setup
+Read these when relevant to the task at hand:
 
-```sh
-curl -s https://raw.githubusercontent.com/samkujovich/dot-claude/main/setup.sh | bash
-```
+- `WHOAMI.md` — Background on Sam: contact, career history, projects, and areas of expertise
+- `CODING_STYLE.md` — Coding conventions and engineering philosophy
+
+## Global Settings
+
+- `settings.local.json` — Claude Code permission allow-list (granular Bash command permissions for git operations, etc.)
 
 ## Skills
 
-| Skill | Description |
-|-------|-------------|
-| `/commit-and-push` | Lint, commit, push, and create/update a draft PR |
-| `/sync-claude-global-settings` | Sync `~/.claude` with the remote repo |
+- `/commit-and-push` — Lint, commit, push, and create/update a draft PR
+- `/sync-claude-global-settings` — Sync `~/.claude` with the remote repo
 
-## Inspiration
+## Setup
 
-Inspired by [evantahler/dot-claude](https://github.com/evantahler/dot-claude).
+To install on a new machine (clones the repo and merges with any existing `~/.claude` data):
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/samkujovich/dot-claude/main/setup.sh | bash
+```
