@@ -1,0 +1,28 @@
+# Claude Code ephemeral data
+backups/
+cache/
+commands/
+downloads/
+file-history/
+history.jsonl
+mcp-needs-auth-cache.json
+paste-cache/
+plans/
+plugins/
+policy-limits.json
+projects/
+remote-settings.json
+session-env/
+sessions/
+shell-snapshots/
+tasks/
+telemetry/
+last-synced-at
+memory/
+
+# Machine-specific settings
+settings.local.json
+
+# Dependencies
+node_modules/
+bun.lock
