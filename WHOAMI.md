@@ -1,30 +1,31 @@
-# Who Am I
+# Sam Kujovich
 
-- **Name:** Sam Kujovich
-- **Role:** Engineering Manager at Arcade.dev (Tools & Growth teams)
-- **Location:** Camas, WA
-- **LinkedIn:** [in/samkujovich](https://linkedin.com/in/samkujovich)
-- **GitHub:** [samkujovich](https://github.com/samkujovich)
+Engineering Manager at Arcade.dev — leading Tools and Growth teams, building the platform that lets AI agents actually do things with real auth, permissions, and security.
+
+## Contact
+
+- Work email: sam [at] arcade [dot] dev
+- GitHub: [samkujovich](https://github.com/samkujovich)
+- LinkedIn: [/in/samkujovich](https://linkedin.com/in/samkujovich)
+- Location: Camas, WA
 
 ## Background
 
-Engineering leader with 5+ years progressing from Manager to Director. Combines deep technical hands-on experience with organizational leadership.
-
-- **Arcade.dev** — First Engineering Manager. Leading Tools and Growth teams, building the platform that connects AI agents to real-world systems with proper auth, permissions, and security.
-- **A Place for Mom** — Director of Software Engineering. Led 12 engineers across AI Product and B2B Platform teams. Spearheaded Grace, a multi-agent system for an AI-native senior care marketplace. Transformed platform org metrics: KTLO 45%→19%, incident frequency 1/week→1/year, delivery lead time 20+→6 days.
-- **Realtor.com** — Built notifications infrastructure handling 4B+ quarterly messages. Led Auth0 migration of 170M records.
-- **Pandora** — Founding engineer on distributed message bus using Kafka.
-- **Okta** — Sales (SDR to AE, Presidents Club 2019).
-- **Education** — Computer Engineering, Santa Clara University (Dean's Scholar).
-
-## Key Interests
-
-- Multi-agent systems and agentic AI
-- Agent evaluation methodologies
-- Platform engineering and organizational design
-- Development workflow optimization
+- B.S. in Computer Engineering, Santa Clara University
+- 5+ years of engineering leadership, Manager → Sr Manager → Director
+- Previously Director of Software Engineering at A Place for Mom, leading 12 engineers across AI Product and B2B Platform
+- Previously at Realtor.com, Pandora, Okta, and Lightspeed Venture Partners
 
 ## Notable Projects
 
-- **Grace** — Multi-agent system with hexagonal architecture for LLM provider flexibility, composable prompt packs with filesystem fallback, and dual-layer guardrail system combining pattern matching with LLM evaluation
+- **Grace** — Production multi-agent system for an AI-native senior care marketplace. Hexagonal architecture, composable prompt packs, dual-layer guardrail system.
 - **prd-decomposer** — MCP server decomposing PRDs into Jira-ready epics and stories using OpenAI Agents SDK, with evaluation suite
+
+## Areas of Expertise
+
+- AI & LLM tooling, agentic tool design
+- AI/ML infrastructure (multi-agent systems, agentic AI, agent evaluation)
+- Platform engineering (Auth, Identity, Notifications, Search)
+- Distributed systems (Kafka, microservices)
+- Engineering leadership and organizational design
+- Development workflow optimization
