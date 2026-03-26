@@ -1,42 +1,88 @@
 # Coding Style
 
-## Philosophy
+## Philosophy: Write as Little Code as Possible
 
-Write clear, simple code that solves the problem at hand. Avoid over-engineering and premature abstraction. The best code is code you don't have to write.
+Every other principle serves this one.
+
+Prefer reusing existing code, utilities, and patterns over writing new ones. Make small, focused changes — don't refactor the world to add a feature. If the codebase already has a pattern for something, follow it. If a framework provides a mechanism, use it instead of rolling your own.
+
+Don't build for hypothetical future requirements. Solve the problem in front of you. Three similar lines of code are better than a premature abstraction. You can always refactor later when the pattern is clear — and usually it turns out you don't need to.
 
 ## Principles
 
-### 1. Hexagonal Architecture
+### 1. Ship Small, Iterate
 
-Separate core business logic from external dependencies. Use ports and adapters to keep the domain clean and testable. This enables swapping providers (LLM, database, messaging) without touching business logic.
+Build MVPs and iterate. Deliver something small that works, then improve it. Small wins compound into big wins. Big bang releases after long periods of silence are a failure mode, not a strategy.
 
-### 2. Multi-Agent System Design
+Everything ships incrementally. If a feature feels too big, break it down until each piece delivers value on its own.
 
-- Agents should be composable and single-responsibility
-- Use structured evaluation to validate agent behavior
-- Implement guardrails at system boundaries, not scattered through business logic
-- Dual-layer validation: fast pattern matching + LLM-based evaluation
+### 2. Prove It Works
 
-### 3. Platform Engineering
+Every feature should have a way to know if it's working and why — or why not. This isn't just about tests (though those matter). It's about the full picture: tests, evals, observability, metrics.
 
-- Reduce KTLO burden through automation and reliability improvements
-- Measure what matters: lead time, incident frequency, deployment frequency
-- Build internal platforms as products — with clear interfaces and documentation
+Think at the feature level, not just the code level. Tests prove the code runs. But can you point to something that says "this solved the problem" or "this didn't"? If you can't answer that, you're not done.
 
-### 4. Test Against the Real Thing
+For AI/agent work, this means structured evaluation — evals over vibes. Know when an agent is performing well and when it's degrading.
 
-- Prefer integration tests over mocks where feasible
-- Test agent behavior with evaluation suites, not just unit tests
-- Validate at system boundaries (user input, external APIs)
+### 3. Defend the Why
 
-### 5. Keep Dependencies Explicit
+Articulate pros and cons of approaches, pick one, and have a reason. The specific choice matters less than the reasoning behind it. A well-defended decision you disagree with is better than an unexamined one you happen to agree with.
 
-- 12-Factor app principles: config via environment variables, stateless processes
-- Pin dependencies. Understand what you're importing.
-- Prefer standard library and well-maintained packages over rolling your own
+Keep it lightweight — a PR description, a Linear ticket comment, a short summary in a thread. Not everything needs a formal decision doc. Save those for the truly consequential, irreversible choices.
+
+When presenting options: show trade-offs, make a recommendation, defend it. Let the decision-maker decide.
+
+### 4. Follow the Codebase
+
+The engineers on the team are the experts on the code. Follow the practices they've established. If the codebase does something a certain way, do it that way — don't introduce a new pattern without a reason.
+
+Before proposing changes, understand what already exists. Read the code, check for existing patterns and utilities, then build on top of them. Clean code and separation of concerns matter, but consistency with the existing codebase matters more.
+
+### 5. Optimize for AI Tooling
+
+Most code is AI-generated and that number is increasing. Keep this in mind at every level:
+
+- **Documentation and tickets**: Write with the assumption that an AI agent will load it into context. Be explicit, structured, and unambiguous.
+- **Code architecture**: Structure code so AI tools (Claude Code, Cursor, Codex) can understand and extend it. Small files, clear naming, obvious patterns.
+- **Interfaces**: Design AI-friendly interfaces in all systems. Structured inputs/outputs, clear schemas, good error messages.
 
 ### 6. Security at the Boundary
 
-- Validate and sanitize all external input at the edge
-- Use schema validation (Zod, Pydantic) for structured data
-- Never rely on prompt engineering alone for security in AI systems
+Validate and sanitize all external input at the edge. Use schema validation for structured data. Inside the boundary, trust your own code.
+
+For AI systems: security comes from purpose-built controls — not from asking the model nicely. Prompting tells the model what you want, not what it's allowed to do.
+
+## How I Work
+
+I lead the team — I spend less than 20% of my time writing code. When I'm in the code, I'm typically:
+
+- Spiking on architecture to validate an approach before the team builds it
+- Reviewing PRs to understand and catch issues
+- Debugging production problems
+- Contributing to team repos (Python now, possibly TypeScript)
+- Building personal tools and scripts
+
+## LLM Instructions
+
+When working with Sam:
+
+**DO:**
+
+- Explain the goal of what something is trying to achieve, then the process by which it does it
+- Present options with pros/cons and a recommendation with defense
+- Check the codebase for existing patterns before proposing new ones
+- Plan before coding — outline the approach and confirm before implementing
+- Make small, focused changes
+- Follow whatever conventions the codebase already uses
+- Confirm assumptions before acting on them
+- Reuse existing utilities and patterns
+
+**DON'T:**
+
+- Over-engineer solutions
+- Refactor surrounding code when making a simple change
+- Assume a tech choice or pattern without checking the codebase first
+- Jump straight to coding without explaining the plan
+- Make changes beyond what was asked
+- Introduce new patterns when existing ones work
+- Build for hypothetical future requirements
