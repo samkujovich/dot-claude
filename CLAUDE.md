@@ -13,6 +13,7 @@ These files are included in every conversation:
 Read these when relevant to the task at hand:
 
 - `WHOAMI.md` — Background on Sam: contact, career history, projects, and areas of expertise
+- `WRITING_STYLE.md` — Writing style guide for replicating Sam's voice
 - `CODING_STYLE.md` — Coding conventions and engineering philosophy
 
 ## Global Settings
