@@ -1,7 +1,6 @@
 # Claude Code ephemeral data
 backups/
 cache/
-commands/
 downloads/
 file-history/
 history.jsonl
