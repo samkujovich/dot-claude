@@ -3,8 +3,13 @@
   "hooks": {
     "SessionStart": [
       {
-        "type": "command",
-        "command": "bash ~/.claude/scripts/check-sync.sh"
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash ~/.claude/scripts/check-sync.sh"
+          }
+        ]
       }
     ]
   },
