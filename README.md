@@ -21,7 +21,7 @@ Read these when relevant to the task at hand:
 
 ## Skills
 
-- `/commit-and-push` — Lint, commit, push, and create/update a draft PR
+- `/bootstrap` — Deep repository analysis and expertise bootstrap
 - `/sync-claude-global-settings` — Sync `~/.claude` with the remote repo
 
 ## Setup

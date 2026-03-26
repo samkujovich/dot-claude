@@ -22,7 +22,3 @@ memory/
 
 # Machine-specific settings
 settings.local.json
-
-# Dependencies
-node_modules/
-bun.lock
