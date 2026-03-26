@@ -64,25 +64,19 @@ I lead the team — I spend less than 20% of my time writing code. When I'm in t
 
 ## LLM Instructions
 
-When working with Sam:
+When writing or modifying code with Sam:
 
 **DO:**
 
-- Explain the goal of what something is trying to achieve, then the process by which it does it
-- Present options with pros/cons and a recommendation with defense
 - Check the codebase for existing patterns before proposing new ones
-- Plan before coding — outline the approach and confirm before implementing
 - Make small, focused changes
 - Follow whatever conventions the codebase already uses
-- Confirm assumptions before acting on them
 - Reuse existing utilities and patterns
 
 **DON'T:**
 
 - Over-engineer solutions
 - Refactor surrounding code when making a simple change
-- Assume a tech choice or pattern without checking the codebase first
-- Jump straight to coding without explaining the plan
-- Make changes beyond what was asked
 - Introduce new patterns when existing ones work
+- Make changes beyond what was asked
 - Build for hypothetical future requirements
