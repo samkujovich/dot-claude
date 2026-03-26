@@ -1,5 +1,13 @@
 {
   "defaultMode": "auto",
+  "hooks": {
+    "SessionStart": [
+      {
+        "type": "command",
+        "command": "bash ~/.claude/scripts/check-sync.sh"
+      }
+    ]
+  },
   "attribution": {
     "commit": "",
     "pr": ""
