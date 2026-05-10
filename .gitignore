@@ -18,6 +18,8 @@ tasks/
 telemetry/
 last-synced-at
 memory/
+pr-scope-state-*.json
+usage-data/
 
 # Machine-specific settings
 settings.local.json
