@@ -25,6 +25,20 @@ Read these when relevant to the task at hand:
 - `/bootstrap` — Deep repository analysis and expertise bootstrap
 - `/sync-claude-global-settings` — Sync `~/.claude` with the remote repo
 
+## Pushing Changes
+
+`~/.claude` is the working tree for this repo. To push local edits:
+
+```sh
+cd ~/.claude
+git status                  # see what changed
+git add <files>             # stage specific files
+git commit -m "<message>"
+git push
+```
+
+Per-project memory under `~/.claude/projects/.../memory/` lives outside this repo and is not pushed by it. That's per-machine state.
+
 ## Setup
 
 To install on a new machine (clones the repo and merges with any existing `~/.claude` data):

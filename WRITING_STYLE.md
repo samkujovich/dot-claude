@@ -8,7 +8,7 @@ Sam writes the way he talks — direct, warm, and with zero tolerance for corpor
 
 **Short sentences.** Defaults to punchy, declarative sentences. Doesn't connect thoughts with semicolons or complex subordinate clauses. If a sentence runs long, break it.
 
-**No em-dashes.** Em-dashes are a consistent tell for AI-generated or overly polished writing. Remove them every time.
+**No em-dashes (`—`).** The em-dash character is a consistent tell for AI-generated or overly polished writing. Scrub on sight. The spaced hyphen (` - `) is Sam's natural substitute in plain text and should be preserved — don't conflate the two.
 
 **No filler openers.** Don't start emails or messages with "I hope this finds you well" or "Thanks so much for reaching out." Get to the point.
 
@@ -26,8 +26,13 @@ Emails are warm but efficient. They should feel like they came from a real perso
 - Add light humor when appropriate
 - Mention personal details naturally as a human signal
 - Use exclamation points sparingly but genuinely
-- Close with warmth and anticipation rather than formal sign-offs
+- Close with warmth and anticipation rather than long-form sign-offs
 - Get to the point in the first sentence
+
+**Openers and sign-offs:**
+
+- Openers: "Hey" is most common, "Hi" and "Hello" also work. Pick whichever lands first — not worth overthinking.
+- Sign-offs: either `Best,\nSam` (on a new line) or just `Sam`. Full name lives in the email signature, so don't repeat it inline.
 
 **Don't:**
 
@@ -35,7 +40,32 @@ Emails are warm but efficient. They should feel like they came from a real perso
 - Mirror back what the other person said as a summary opener
 - Over-express enthusiasm ("I'm SO excited about this opportunity!")
 - Add redundant phrasing — pick one way to say it
-- Use formal sign-offs ("Best regards", "Warm regards", "Kind regards")
+- Use long-form sign-offs ("Best regards", "Warm regards", "Kind regards")
+
+**Direct ownership when something goes wrong:**
+
+When you're late, dropped a ball, or made a mistake, own it in one sentence. No over-apology, no excuse padding. Acknowledge, give a one-line reason if it's relevant, move forward.
+
+- "Apologies for the delay, there was some miscommunication on our side."
+- "My bad, I missed this — fixing now."
+
+## Slack and Other Real-Time Chat
+
+Slack is the most casual channel. Sam is generally informal in how he writes and speaks, and Slack takes that to an extreme — closer to texting than to email.
+
+**Do:**
+
+- Start messages lowercase. Don't capitalize unless it's a proper noun.
+- Send fragments as standalone messages. "and easy." can be its own line.
+- Break thoughts across multiple messages instead of one polished paragraph.
+- Leave in typos that don't change meaning. Don't go back and fix them.
+- Use emoji reactions instead of writing a full reply when an acknowledgment is enough.
+
+**Don't:**
+
+- Open with "Hi [name]" or any greeting. Go straight to the point.
+- Add a sign-off or signature.
+- Spell-check or restructure into proper sentences. The medium is real-time, not edited.
 
 ## Technical and Strategic Communication
 
@@ -55,7 +85,7 @@ Sam is an EM who thinks in systems. When writing about technical topics:
 | Thank you notes | Personal, specific, lightly humorous — mentions real moments |
 | Follow-ups | Gets to the point in the first sentence, doesn't build to it |
 | Offer negotiations | Calm, data-grounded, asks direct questions |
-| Slack/casual internal | Shorter than emails, even more direct |
+| Slack/casual internal | Extreme casual — lowercase starts, fragments, multi-message bursts, typos left in |
 
 ## Structure
 
@@ -66,8 +96,8 @@ Sam is an EM who thinks in systems. When writing about technical topics:
 
 ## Common Phrases That Sound Like Sam
 
-- "Worth noting that..." (brief flag before an important detail)
 - Describing something as a "good narrative" or "clean story"
+- "actually" as load-bearing emphasis — Sam uses this word deliberately. Don't scrub it, but don't sprinkle it either. One per email is plenty.
 - "Forcing function"
 - "...which is fine" or "...and that's okay" (normalizing a tradeoff)
 - Direct status updates without preamble: "Heard back. Moving to the next round."
@@ -82,6 +112,11 @@ Sam is an EM who thinks in systems. When writing about technical topics:
 - "Excited to share that..." (unless genuinely celebratory like a LinkedIn post)
 - Long compound sentences with multiple subordinate clauses
 - "Delve", "crucial", "utilize", "streamline", "robust", "comprehensive", "foster", "navigate"
+- "Worth noting that..." (shows up in past drafts but it's AI residue, not voice)
+- "X isn't Y. It's Z." (dramatic reframe couplet)
+- "Sometimes it means X. Sometimes it means Y." stacked parallel
+- "Old [X] / New [X]" contrast framings
+- "If you're [audience], [advice]" closer pattern
 - "Great question!", "Absolutely!"
 - Generic inspirational wrap-up sentences
 
@@ -95,6 +130,7 @@ When Claude drafts something for Sam, he tends to:
 - Replace passive voice with active
 - Add one specific personal detail that grounds the message
 - Remove any sentence that restates something already said
+- When citing data or claims, name the source (e.g., "Stack Overflow 2025 Developer Survey", "McKinsey, November 2025"). Cut generic citations like "studies show" or "research suggests"
 
 He edits for compression, not expansion.
 
