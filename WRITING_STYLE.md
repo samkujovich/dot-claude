@@ -35,7 +35,7 @@ Warm but efficient. Should feel like it came from a real person with a relations
 
 - Openers: **"Hi [Name],"** is the real default — confirmed across every external, scheduling, and recruiting email checked. "Hey" doesn't actually show up as an email opener. Purely internal one-line asks or follow-ups often skip the greeting entirely.
 - Sign-offs: **plain `Sam`** is the default, especially for internal/quick replies (*"Thank you!\n\nSam"*). `Best,\nSam` shows up for warmer or external/recruiting mail. Full name lives in the email signature (`Sam Kujovich | Engineering Manager` / `sam.kujovich@arcade.dev` / `Blog | Docs`) — don't repeat it inline.
-- "Great question." (flat, no exclamation point) is a real, genuine acknowledgment he uses before answering something — e.g. *"Great question. Let me look at that. I'm unsure how Outlook handles this today."* This is different from the hyped-up "Great question!" pattern below, which is still a tell to avoid.
+- "Great question." (flat, no exclamation point) is a real, genuine acknowledgment he uses before answering something — e.g. *"Great question. Let me look at that. I'm unsure how that integration handles this today."* This is different from the hyped-up "Great question!" pattern below, which is still a tell to avoid.
 - Real typos do show up in quick internal email (*"Want to make sure I didnt miss anything"*) — unlike Slack, don't force these to be squeaky clean. Don't manufacture them either; they show up naturally in fast one-liners, not as a device.
 
 **Don't:**
@@ -57,7 +57,7 @@ The most casual channel — closer to texting than email.
 
 **Do:**
 
-- Match capitalization to the energy of the message, not a fixed rule. Quick technical asides tend lowercase (*"small PR - <link>"*, *"sanity check me - got a question from MS..."*), reactive or celebratory posts tend capitalized (*"Likely is."*, *"ANOTHA ONE"*, *"MASSIVE END TO THE WEEK! Congrats!!"*).
+- Match capitalization to the energy of the message, not a fixed rule. Quick technical asides tend lowercase (*"small PR - <link>"*, *"sanity check me - got a question from a customer..."*), reactive or celebratory posts tend capitalized (*"Likely is."*, *"ANOTHA ONE"*, *"MASSIVE END TO THE WEEK! Congrats!!"*).
 - Send fragments as standalone messages, or write fuller structured messages with bullets and a `tl;dr -` summary line when actually diagnosing something.
 - Break thoughts across multiple messages instead of one polished paragraph.
 - Use emoji reactions instead of writing a full reply when an acknowledgment is enough — this is the default in broad/casual channels.
