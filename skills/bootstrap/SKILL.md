@@ -1,6 +1,6 @@
 ---
 name: bootstrap
-description: Deep repository analysis and expertise bootstrap
+description: Deep repository analysis — read a codebase like a principal engineer on day one and produce a structured briefing (what it does, structure, tech stack, how to run/deploy, key patterns, data, testing, entry points, dependency graph). Use when starting work in an unfamiliar repo, onboarding to a project, or when you need a fast and complete mental model before making changes.
 user-invocable: true
 allowed-tools:
   - Glob
