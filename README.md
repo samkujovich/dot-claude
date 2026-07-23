@@ -27,6 +27,7 @@ Sam Kujovich's global Claude Code configuration (`~/.claude`). Applies to all pr
 - `/my-writing-style` — draft/edit writing in Sam's voice
 - `/open-pr` — turn done work into a high-quality Draft PR
 - `/process-pr-review` — work through a PR's review comments one at a time
+- `/review-panel` — fan out the reviewer subagents over a PR/plan and synthesize their verdicts
 - `/sync-claude-global-settings` — sync `~/.claude` with this repo
 
 Work-specific skills (`toolkit-review`, `acr-cross-check`) are gitignored — internal methodology, kept local and not published here.
