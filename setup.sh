@@ -40,6 +40,8 @@ if [ -d "$CLAUDE_DIR" ]; then
   mv "$TMP_DIR/dot-claude/.git" "$CLAUDE_DIR/.git"
 
   # Checkout tracked files from the repo, without clobbering untracked data.
+  echo "==> Applying repo files (existing tracked files like settings.json will be replaced;"
+  echo "    your sessions, caches, memory, and settings.local.json are preserved)"
   cd "$CLAUDE_DIR"
   git checkout HEAD -- .
 
