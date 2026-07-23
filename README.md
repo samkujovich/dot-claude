@@ -31,6 +31,18 @@ Sam Kujovich's global Claude Code configuration (`~/.claude`). Applies to all pr
 
 Work-specific skills (`toolkit-review`, `acr-cross-check`) are gitignored — internal methodology, kept local and not published here.
 
+**Subagents** (`agents/`, AI-native review personas)
+
+A panel of senior-expert reviewers, each run independently (uncorrelated) at a high bar. Read-only advisors — they review and recommend, they don't edit.
+
+- `principal-engineer` — deep technical review (architecture, tool/MCP design, code quality)
+- `qa-expert` — adversarial staff QA; failure modes, edge cases, resilience
+- `product-manager` — AI-native PM; jobs-to-be-done, agent UX, trust
+- `cto` — strategic engineering: risk, sequencing, build-vs-buy, execution
+- `cpo` — strategic product: positioning, prioritization, what not to build
+
+Invoke one for a single lens, or spin up several in parallel as a review panel. Because each forms its own opinion in an isolated context, the panel gives genuinely uncorrelated perspectives rather than one agent agreeing with itself.
+
 ## Pushing changes
 
 `~/.claude` is the working tree for this repo. Use the `/sync-claude-global-settings` skill, or manually:
