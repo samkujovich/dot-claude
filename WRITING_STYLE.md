@@ -34,7 +34,7 @@ Warm but efficient. Should feel like it came from a real person with a relations
 **Openers and sign-offs:**
 
 - Openers: **"Hi [Name],"** is the real default — confirmed across every external, scheduling, and recruiting email checked. "Hey" doesn't actually show up as an email opener. Purely internal one-line asks or follow-ups often skip the greeting entirely.
-- Sign-offs: **plain `Sam`** is the default, especially for internal/quick replies (*"Thank you!\n\nSam"*). `Best,\nSam` shows up for warmer or external/recruiting mail. Full name lives in the email signature (`Sam Kujovich | Engineering Manager` / `sam.kujovich@arcade.dev` / `Blog | Docs`) — don't repeat it inline.
+- Sign-offs: **plain `Sam`** is the default, especially for internal/quick replies (*"Thank you!\n\nSam"*). `Best,\nSam` shows up for warmer or external/recruiting mail. Full name lives in the email signature (`Sam Kujovich | Member of Technical Staff` / `sam.kujovich@arcade.dev` / `Blog | Docs`) — don't repeat it inline.
 - "Great question." (flat, no exclamation point) is a real, genuine acknowledgment he uses before answering something — e.g. *"Great question. Let me look at that. I'm unsure how that integration handles this today."* This is different from the hyped-up "Great question!" pattern below, which is still a tell to avoid.
 - Real typos do show up in quick internal email (*"Want to make sure I didnt miss anything"*) — unlike Slack, don't force these to be squeaky clean. Don't manufacture them either; they show up naturally in fast one-liners, not as a device.
 
