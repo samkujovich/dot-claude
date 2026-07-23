@@ -9,7 +9,7 @@ Member of Technical Staff at [Arcade.dev](https://arcade.dev), leading the Tools
 - Work email: sam [at] arcade [dot] dev
 - GitHub: [samkujovich](https://github.com/samkujovich)
 - LinkedIn: [/in/samkujovich](https://linkedin.com/in/samkujovich)
-- Location: Camas, WA
+- Location: Bay Area, CA
 
 ## What I'm Building
 
