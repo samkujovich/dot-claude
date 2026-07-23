@@ -34,7 +34,8 @@ When processing PR review comments or Bugbot findings: empirically test claims b
 
 ## Global Settings
 
-- `settings.local.json` — Claude Code permission allow-list (granular Bash command permissions for git operations, etc.)
+- `settings.json` — Tracked global config: default mode, effort level, permission allow-list (git commands), the SessionStart sync-check hook, and enabled plugins.
+- `settings.local.json` — Machine-specific overrides. Gitignored, never pushed.
 
 ## Setup
 

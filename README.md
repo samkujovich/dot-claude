@@ -18,12 +18,18 @@ Read these when relevant to the task at hand:
 
 ## Global Settings
 
-- `settings.local.json` — Claude Code permission allow-list (granular Bash command permissions for git operations, etc.)
+- `settings.json` — Tracked global config: default mode, effort level, permission allow-list (git commands), the SessionStart sync-check hook, and enabled plugins.
+- `settings.local.json` — Machine-specific overrides. Gitignored, never pushed.
 
 ## Skills
 
 - `/bootstrap` — Deep repository analysis and expertise bootstrap
+- `/open-pr` — Turn done work on a branch into a high-quality Draft PR
+- `/process-pr-review` — Work through a PR's review comments one at a time
+- `/my-writing-style` — Draft/edit first-person writing in Sam's voice
 - `/sync-claude-global-settings` — Sync `~/.claude` with the remote repo
+
+Work-specific skills (`toolkit-review`, `acr-cross-check`) are kept local and gitignored — they hold internal engineering methodology and are not published here.
 
 ## Pushing Changes
 

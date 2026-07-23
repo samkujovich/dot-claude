@@ -17,9 +17,15 @@ shell-snapshots/
 tasks/
 telemetry/
 last-synced-at
+.last-cleanup
+.last-update-result.json
 memory/
 pr-scope-state-*.json
 usage-data/
 
 # Machine-specific settings
 settings.local.json
+
+# Work-specific skills — internal methodology, kept local (not published)
+skills/toolkit-review/
+skills/acr-cross-check/

@@ -28,7 +28,7 @@ Warm but efficient. Should feel like it came from a real person with a relations
 - Add light humor when appropriate
 - Mention personal details naturally as a human signal
 - Use exclamation points sparingly but genuinely — one per email, if any
-- Get to the point in the first sentence. Internal asks often skip the greeting entirely and open straight on the ask: *"Can you ask Obuli to complete the final 2 items in the project goals?"*, *"Did we hear back on this?"*
+- Get to the point in the first sentence. Internal asks often skip the greeting entirely and open straight on the ask: *"Can you ask [teammate] to complete the final 2 items in the project goals?"*, *"Did we hear back on this?"*
 - Use a hyphen aside for a quick explanation, same as Slack/LinkedIn: *"Sorry for the delay - I'm on PTO this week, but wanted to get back to you."*
 
 **Openers and sign-offs:**

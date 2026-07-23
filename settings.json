@@ -40,5 +40,6 @@
     "linear@claude-plugins-official": true
   },
   "defaultMode": "auto",
-  "effortLevel": "high"
+  "effortLevel": "high",
+  "skipWorkflowUsageWarning": true
 }
