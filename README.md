@@ -1,39 +1,39 @@
 # dot-claude
 
-This is Sam Kujovich's global Claude Code configuration. It applies to all projects and repositories. Project-specific instructions live in each project's own `CLAUDE.md`.
+Sam Kujovich's global Claude Code configuration (`~/.claude`). Applies to all projects; project-specific instructions live in each project's own `CLAUDE.md`.
 
-## Always Loaded
+## What's here
 
-These files are included in every conversation:
+**Agent instructions** (loaded by Claude Code every session)
 
-- `@PREFERENCES.md` — Output formatting preferences (lists over prose, concise responses, terminal colors)
+- `CLAUDE.md` — global behavioral instructions
+- `PREFERENCES.md` — output/formatting preferences (imported by `CLAUDE.md`)
 
-## Reference Files
+**Reference docs** (read on demand)
 
-Read these when relevant to the task at hand:
+- `WHOAMI.md` — background on Sam
+- `WRITING_STYLE.md` — the voice spec (applied by the `my-writing-style` skill)
 
-- `WHOAMI.md` — Background on Sam: contact, career history, projects, and areas of expertise
-- `WRITING_STYLE.md` — Writing style guide for replicating Sam's voice
-- `CODING_STYLE.md` — Coding conventions and engineering philosophy
+**Config**
 
-## Global Settings
+- `settings.json` — tracked global config: default mode, effort level, permission allow/deny lists, hooks (SessionStart sync check + git guard), enabled plugins
+- `settings.local.json` — machine-specific overrides (gitignored, never pushed)
+- `scripts/` — hook scripts (`check-sync.sh`, `git-guard.sh`)
 
-- `settings.json` — Tracked global config: default mode, effort level, permission allow-list (git commands), the SessionStart sync-check hook, and enabled plugins.
-- `settings.local.json` — Machine-specific overrides. Gitignored, never pushed.
+**Skills** (`skills/`, progressive-disclosure procedures)
 
-## Skills
+- `/bootstrap` — deep repository analysis + expertise bootstrap
+- `/coding-style` — Sam's engineering conventions
+- `/my-writing-style` — draft/edit writing in Sam's voice
+- `/open-pr` — turn done work into a high-quality Draft PR
+- `/process-pr-review` — work through a PR's review comments one at a time
+- `/sync-claude-global-settings` — sync `~/.claude` with this repo
 
-- `/bootstrap` — Deep repository analysis and expertise bootstrap
-- `/open-pr` — Turn done work on a branch into a high-quality Draft PR
-- `/process-pr-review` — Work through a PR's review comments one at a time
-- `/my-writing-style` — Draft/edit first-person writing in Sam's voice
-- `/sync-claude-global-settings` — Sync `~/.claude` with the remote repo
+Work-specific skills (`toolkit-review`, `acr-cross-check`) are gitignored — internal methodology, kept local and not published here.
 
-Work-specific skills (`toolkit-review`, `acr-cross-check`) are kept local and gitignored — they hold internal engineering methodology and are not published here.
+## Pushing changes
 
-## Pushing Changes
-
-`~/.claude` is the working tree for this repo. To push local edits:
+`~/.claude` is the working tree for this repo. Use the `/sync-claude-global-settings` skill, or manually:
 
 ```sh
 cd ~/.claude
@@ -43,7 +43,7 @@ git commit -m "<message>"
 git push
 ```
 
-Per-project memory under `~/.claude/projects/.../memory/` lives outside this repo and is not pushed by it. That's per-machine state.
+Per-project memory under `~/.claude/projects/.../memory/` lives outside this repo and is not pushed. That's per-machine state.
 
 ## Setup
 

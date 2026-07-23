@@ -1,4 +1,11 @@
+---
+name: coding-style
+description: Sam's engineering conventions and philosophy — write as little code as possible, reuse existing patterns, ship small, prove it works with tests and evals, follow the codebase, secure the boundary. Use when writing, modifying, reviewing, or planning code in any project. A project's own conventions take precedence where they differ.
+---
+
 # Coding Style
+
+Sam's default engineering conventions. Where a project's own `CLAUDE.md`, rule files, or established patterns differ, follow the project — consistency with the existing codebase wins over these defaults.
 
 ## Philosophy: Write as Little Code as Possible
 
@@ -52,19 +59,7 @@ Validate and sanitize all external input at the edge. Use schema validation for 
 
 For AI systems: security comes from purpose-built controls — not from asking the model nicely. Prompting tells the model what you want, not what it's allowed to do.
 
-## How I Work
-
-I lead the team — I spend less than 20% of my time writing code. When I'm in the code, I'm typically:
-
-- Spiking on architecture to validate an approach before the team builds it
-- Reviewing PRs to understand and catch issues
-- Debugging production problems
-- Contributing to team repos (Python now, possibly TypeScript)
-- Building personal tools and scripts
-
-## LLM Instructions
-
-When writing or modifying code with Sam:
+## When Writing or Modifying Code
 
 **DO:**
 
